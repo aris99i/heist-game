@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="The Meridian Heist: an original top-down stealth game. Slip past guards and cameras, crack the vault, steal the Star of Meridian, and escape.">
+<title>The Meridian Heist — a stealth museum robbery</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #07080f;
+    height: 100%;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+  #wrap {
+    text-align: center;
+  }
+  canvas {
+    display: block;
+    width: 1280px;
+    height: 800px;
+    max-width: 100vw;
+    max-height: 100vh;
+    background: #181b27;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+  }
+  #note {
+    color: #6b7086;
+    font-size: 13px;
+    margin-top: 8px;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="800"></canvas>
+  <div id="note">The Meridian Heist — an original stealth game. No network, no tracking, just you and the alarm.</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
